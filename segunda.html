@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Ventas de Videojuegos (2008)</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-2">
+        <h1>Análisis de Ventas de Videojuegos</h1>
+    </header>
+
+    <div class="d-flex">
+        <nav class="bg-light p-3" style="width: 250px;">
+            <h4>Ejercicios</h4>     
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-trophy"></i> Top 10 Juegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="segunda.html"><i class="fas fa-chart-bar"></i> Ventas Región y Género</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tercera.html"><i class="fas fa-calendar-alt"></i> Ventas Vigencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cuarta.html"><i class="fas fa-chart-line"></i> Indicadores Ventas</a>
+                </li>
+            </ul>
+        </nav>
+        
+
+        <div class="container mt-4">
+
+            <div class="alert alert-secondary text-center">
+                <h4>Juegos Más Vendidos segun Regiones</h4>
+                <p>En este apartado se presenta los juegos más vendidos en Japón, Estados Unidos y Europa, con base en la información de ventas de videojuegos en todo el mundo.</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="top10">División Porcentual de las Ventas por Region</h5>
+                            <iframe src="segunda/sales_by_region.html" width="100%" height="280px" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                         
+                <div class="col-md-8 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="ventas">Tendencia de las ventas en Japón, Estados Unidos y Europa</h5>
+                            <iframe src="segunda/sales_by_year_region.html" width="100%" height="300px" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="distribucion">Tendencia de las ventas en Japón, Estados Unidos y Europa</h5>
+                            <p>Filtrados por los Géneros de Action, Role-Playing, Strategy y Misc</p>
+                            <iframe src="segunda/sales_by_year_genre_region.html" width="100%" height="300px" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-3 mt-4">
+        <p>&copy; 2024 Análisis de Ventas de Videojuegos. Todos los derechos reservados.<br>
+            Alvaro Perez N - Estudiante - aperezn892@javerianacali.edu.co
+        </p>
+    </footer>
+
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

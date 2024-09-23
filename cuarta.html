@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Ventas de Videojuegos (2008)</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-2">
+        <h1>Análisis de Ventas de Videojuegos</h1>
+    </header>
+
+    <div class="d-flex">
+        <nav class="bg-light p-3" style="width: 250px;">
+            <h4>Ejercicios</h4>     
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fas fa-trophy"></i> Top 10 Juegos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="segunda.html"><i class="fas fa-chart-bar"></i> Ventas Región y Género</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tercera.html"><i class="fas fa-calendar-alt"></i> Ventas Vigencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cuarta.html"><i class="fas fa-chart-line"></i> Indicadores Ventas</a>
+                </li>
+            </ul>
+        </nav>
+        
+
+        <div class="container mt-4">
+
+            <div class="alert alert-secondary text-center">
+                <h4>Indicadores de Gestión</h4>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Plataforma con mayores ventas</h5>
+                            <p><i class="fas fa-trophy"></i> PS2</p>
+                            <p>$1.255,64</p>
+                        </div>
+                    </div>
+                </div>
+                         
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Juego más valorado por la crítica</h5>
+                            <p><i class="fas fa-gamepad"></i> Grand Theft Auto IV</p>
+                            <p>98,0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Juego más valorado por los usuarios</h5>
+                            <p><i class="fas fa-gamepad"></i> Breath of Fire III</p>
+                            <p>9,7</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="distribucion">Número de Juegos por Año y Plataforma</h5>
+                            <iframe src="cuarta/games_per_year_platform.html" width="100%" height="300px" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" id="distribucion">Número de Juegos por Publicador</h5>
+                            <iframe src="cuarta/games_per_publisher.html" width="100%" height="300px" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-3 mt-4">
+        <p>&copy; 2024 Análisis de Ventas de Videojuegos. Todos los derechos reservados.<br>
+            Alvaro Perez N - Estudiante - aperezn892@javerianacali.edu.co
+        </p>
+    </footer>
+
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
